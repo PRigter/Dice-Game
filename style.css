@@ -1,0 +1,214 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+#container {
+    max-width: 1024px;
+    margin: 0 auto  ;
+    display: flex;
+}
+
+
+#dices-position {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    max-width: 720px;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+
+#player1-dice, #player2-dice {
+    text-align: center;
+    font-size: 16px;
+}
+
+#player1-dice {
+    margin-right: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#p1-d1, #p2-d1 {
+    margin-right: 14px;
+}
+
+.fade-In {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 20%; }
+    to { opacity: 100%; }
+}
+
+
+#message-position {
+    flex-grow: 2;
+    justify-self: center;
+    margin-top: 60px;
+    text-align: center;
+    width: 340px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 4px 0px 16px 0px;
+}
+
+#message {
+    margin-top: 80px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#play-btn-position {
+    margin-top: 10px;
+}
+
+#roll-dice-btn {
+    padding: 18px;
+    border: 2px solid rgb(156, 150, 150);
+    border-radius: 6px;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.credits-container {
+    margin-top: 80px;
+    border: 1px solid;
+    max-width: 800px;
+    align-self: center;
+}
+
+
+
+/* -- MEDIA QUERIES -- */
+
+
+@media (max-width: 1070px) {
+    
+    #container {
+        max-width: 720px;
+        justify-content: center;
+    }
+
+    #dices-position {
+        margin-top: 12px;
+        max-width: 300px;
+        margin-left: 2px;
+    }
+
+    #message-position {
+        max-width: 260px;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    #player2-dice {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .credits-container {
+        margin-top: 30px;
+        border: 1px solid;
+        max-width: 400px;
+        align-self: center;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+    /* #container {
+        max-width: 720px;
+        justify-content: center;
+    }
+
+    #dices-position {
+        margin-top: 12px;
+        max-width: 300px;
+        margin-left: 2px;
+    }
+
+    #message-position {
+        max-width: 200px;
+        align-items: center;
+
+    } */
+    h2 {
+        font-size: 20px;
+    }
+   
+
+    img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    #player1-dice {
+        margin-right: 0px;
+    }
+
+    .credits-container {
+        max-width: 300px;
+    }
+
+}
+
+
+
+@media (max-width: 370px) {
+
+    
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #player2-dice {
+        margin-top: 12px;
+    }
+
+    #message-position {
+        margin-top: 10px;
+    }
+
+    #message {
+        margin-top: 10px;
+    }
+
+    #play-btn-position {
+        margin-top: 0px;
+    }
+
+    .credits-container {
+        max-width: 200px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+}
