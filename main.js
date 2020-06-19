@@ -70,8 +70,7 @@ function toggleAccordion() {
 }
 
 
-
-// Events Listeners
+// Events Listeners (Roll Dice btn & Credits accordion)
 rollDiceBtn.addEventListener("click", roleDice)
 credits.addEventListener("click", toggleAccordion)
 
