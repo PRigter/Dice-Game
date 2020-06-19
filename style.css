@@ -95,8 +95,31 @@ h2 {
     border: 1px solid;
     max-width: 800px;
     align-self: center;
+    cursor: pointer;
 }
 
+.credits-title{
+    display: flex;
+    align-items: center;
+}
+
+
+.active-arrow {
+    transform: rotate(180deg);
+    transition: ease 0.4s transform;
+}
+
+
+.active-content {
+    transition: ease 0.4s all;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.hidden {
+    display: none;
+}
 
 
 /* -- MEDIA QUERIES -- */

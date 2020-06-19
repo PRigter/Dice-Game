@@ -6,6 +6,7 @@ const player2Dice1 = document.getElementById("p2-d1")
 const player2Dice2 = document.getElementById("p2-d2")
 const messageDisplay = document.getElementById("message")
 const rollDiceBtn = document.getElementById("roll-dice-btn")
+const credits = document.getElementById("credits")
 
 // Audio setup
 let diceAudio = new Audio("./assets/sounds/dice_throw_on_table.mp3", "./assets/sounds/dice_throw_on_table.ogg" )
@@ -57,7 +58,23 @@ function generateRandomDeg() {
     return Math.floor(Math.random() * 360) + 1
 }
 
+
+// Toggles Classes for Credits Elemtent
+function toggleAccordion() {
+    const creditsContent = credits.querySelector(".accordion-content")
+    const arrow = credits.querySelector(".accordion-arrow")
+
+    arrow.classList.toggle("active-arrow")
+    creditsContent.classList.toggle("hidden")
+    creditsContent.classList.toggle("active-content")
+}
+
+
+
+// Events Listeners
 rollDiceBtn.addEventListener("click", roleDice)
+credits.addEventListener("click", toggleAccordion)
+
 
 
 
