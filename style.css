@@ -75,7 +75,6 @@ h2 {
 }
 .credits-container {
     margin-top: 80px;
-    border: 1px solid;
     max-width: 800px;
     align-self: center;
     cursor: pointer;
@@ -116,7 +115,6 @@ h2 {
     #message-position {
         max-width: 260px;
         align-items: center;
-        border: 1px solid;
     }
     #player2-dice {
         margin-top: 30px;
@@ -126,7 +124,6 @@ h2 {
     }
     .credits-container {
         margin-top: 30px;
-        border: 1px solid;
         max-width: 400px;
         align-self: center;
     }
